@@ -1,0 +1,93 @@
+/* ================================== MAIN ======================== */
+
+.mainWrap {
+	max-width: 1440px;
+	min-width: 970px;
+	margin: 0 auto;
+}
+
+/* =============== leftBar ========================== */
+.leftBar {
+	width: 230px;
+	float: left;
+}
+
+.list {
+	// list-style: none;
+}
+
+.list__feed,
+.list__ask,
+.list__companies,
+.list__service {
+	font-size: 16px;
+	padding: 10px 10px 10px 30px;
+	border-bottom: 1px solid #e0e2e6;
+}
+
+
+/* =================== main ======================== */
+.main {
+	width: calc(100% - 470px);
+	float: left;
+	padding: 20px 5px;
+}
+
+.mainHeader {
+	overflow: hidden;
+	padding-bottom: 20px;
+
+}
+
+.mainHeader__text {
+	margin: 0;
+	color: #1c2534;
+	font: 400 30px 'Roboto';
+	float: left;
+}
+
+.btn {
+	cursor: pointer;
+	float: right;
+	border-radius: 5px;
+	font-size: 14px;
+	border-style: none;
+	background-color: #87b448;
+	color: #fff;
+	width: 145px;
+	height: 30px;
+}
+
+.servicesWrap {
+	width: calc(100% -20px);
+	padding: 10px;
+	border: 1px solid #e0e2e6;
+	border-radius: 5px;
+}
+
+.mainServices {
+	width: 140px;
+	height: 140px;
+	border: 1px solid #e0e2e6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rightBar {
+	width: 230px;
+	float: right;
+}
