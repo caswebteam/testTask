@@ -12,7 +12,7 @@
         type: 'get',
         url: "http://504080.com/api/v1/services/categories",
         crossDomain: true,
-        dataType: 'jsonp',
+        dataType: '',
         success: function(results){
             console.log(results);
         },
