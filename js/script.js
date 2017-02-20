@@ -104,8 +104,4 @@ function Denteez(options) {
     this.__init__ = __init__;
 }
 
-var dntz = new Denteez({
-	numOfCards: null
-});
 
-dntz.__init__();

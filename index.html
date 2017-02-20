@@ -39,46 +39,39 @@
             </ul>
             <p class="adv">Advertisement</p>
             <a href="#" class="advImgLink"></a>
-            <a href="#">Ads By Denteez.com</a>
-            <br>
+            <a class="ads" href="#">Ads By Denteez.com</a>
+            <div class='hr'></div>
             <div class="featureBlock">
                 <header class="featureHeader">
                     <p class="feature__text">Featured Companies</p>
-                    <a href="#" class="">See All</a>
+                    <a href="#" class="see">See All</a>
                 </header>
                 <section class="featureTopic">
-                    <img class="featureTopic__img" src="" alt="">
+                    <img class="featureTopic__img" src="images/1.1.png" alt="">
                     <h3 class="featureTopic__header">Company Name</h3>
                     <p class="featureTopic__service">Manufacturer</p>
-                    <p class="featureTopic__city">Belgrade, Serbia</p>?
+                    <p class="featureTopic__city">Belgrade, Serbia</p>
                     <a href="#" class="featureTopic__link">Follow Now</a>
                 </section>
                 <section class="featureTopic">
-                    <img class="featureTopic__img" src="" alt="">
+                    <img class="featureTopic__img" src="images/1.2.png" alt="">
                     <h3 class="featureTopic__header">Company Name</h3>
                     <p class="featureTopic__service">Manufacturer</p>
-                    <p class="featureTopic__city">Belgrade, Serbia</p>?
+                    <p class="featureTopic__city">Belgrade, Serbia</p>
                     <a href="#" class="featureTopic__link">Follow Now</a>
                 </section>
                 <section class="featureTopic">
-                    <img class="featureTopic__img" src="" alt="">
+                    <img class="featureTopic__img" src="images/1.3.png" alt="">
                     <h3 class="featureTopic__header">Company Name</h3>
                     <p class="featureTopic__service">Manufacturer</p>
-                    <p class="featureTopic__city">Belgrade, Serbia</p>?
-                    <a href="#" class="featureTopic__link">Follow Now</a>
-                </section>
-                <section class="featureTopic">
-                    <img class="featureTopic__img" src="" alt="">
-                    <h3 class="featureTopic__header">Company Name</h3>
-                    <p class="featureTopic__service">Manufacturer</p>
-                    <p class="featureTopic__city">Belgrade, Serbia</p>?
+                    <p class="featureTopic__city">Belgrade, Serbia</p>
                     <a href="#" class="featureTopic__link">Follow Now</a>
                 </section>
             </div>
-            <br>
+            <div class='hr'></div>
             <p class="cpr">Denteez Copyright 2015</p>
-            <a href="#">Terms of use</a>
-            <a href="#">Private Policy</a>
+            <a class="terms" href="#">Terms of use</a>
+            <a class="pp" href="#">Private Policy</a>
         </section>
         <main class="main">
         	<section class="mainHeader">
@@ -92,8 +85,8 @@
         <section class="rightBar">
             <div class='peopleWrap'>
                 <section class="peopleWrap__header">
-                    <p>People you may know</p>
-                    <a href="#" class>See All</a>
+                    <p class="feature__text">People you may know</p>
+                    <a href="#" class='see'>See All</a>
                 </section>
                 <section class="peopleWrapContent">
                     <div class="peopleLinks">
@@ -128,8 +121,8 @@
                 <br>
                 <div class='FP'>
                     <section class="FP-Header">
-                        <p class='FP-Header__text'>People you may know</p>
-                        <a href="#" class="FP-header__see">See All</a>
+                        <p class='FP-Header__text feature__text'>People you may know</p>
+                        <a href="#" class="FP-header__see see">See All</a>
                     </section>
                     <section class="FP-products">
                         <h3 class="FP-products__name">Product Name</h3>
@@ -152,5 +145,12 @@
     </div>
 </body>
 <script src="js/script.js"></script>
+<script>
+    var dntz = new Denteez({
+        numOfCards: 12
+    });
+
+    dntz.__init__();
+</script>
 
 </html>
