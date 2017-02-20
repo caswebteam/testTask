@@ -452,6 +452,10 @@ body {
   cursor: default;
 }
 
+h4, h3, h2, h1 {
+  margin: 0;
+}
+
 .mainTextColor {
   color: #59606b;
 }
@@ -580,10 +584,12 @@ body {
   background-image: url("../images/author.png");
   width: 40px;
   height: 40px;
+  margin-top: 3px;
   float: left;
 }
 
 .header__authorName {
+  margin-top: 3px;
   padding-top: 11px;
   padding-left: 20px;
   color: #fff;
@@ -593,6 +599,7 @@ body {
 
 /* ================================== MAIN ======================== */
 .mainWrap {
+  padding: 0 10px;
   max-width: 1440px;
   min-width: 970px;
   margin: 0 auto;
@@ -602,6 +609,10 @@ body {
 .leftBar {
   width: 230px;
   float: left;
+}
+
+.list {
+  list-style: none;
 }
 
 .list__feed,
@@ -646,15 +657,72 @@ body {
 
 .servicesWrap {
   width: calc(100% -20px);
-  padding: 10px;
+  padding: 7px;
   border: 1px solid #e0e2e6;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 .mainServices {
   width: 140px;
-  height: 140px;
+  margin: 7px;
+  padding-bottom: 15px;
+}
+
+.mainServices:hover .mainServices__serviceName {
+  color: #71973c;
+  -webkit-transition: color .3s ease;
+          transition: color .3s ease;
+}
+
+.mainServices:hover .mainServices__serviceImg {
+  background-color: #f4f7fb;
+  -webkit-transition: background-color .3s ease;
+          transition: background-color .3s ease;
+}
+
+.mainServices__serviceImg {
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: background-color .3s ease;
+          transition: background-color .3s ease;
   border: 1px solid #e0e2e6;
+}
+
+.mainServices__imgLink {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 140px;
+}
+
+.mainServices__icon {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.mainServices__serviceName {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: color .3s ease;
+          transition: color .3s ease;
+  color: #1c2534;
+  font: 400 14px Roboto;
+  padding: 15px 0;
 }
 
 .rightBar {

@@ -1,6 +1,7 @@
 /* ================================== MAIN ======================== */
 
 .mainWrap {
+	padding: 0 10px;
 	max-width: 1440px;
 	min-width: 970px;
 	margin: 0 auto;
@@ -13,7 +14,7 @@
 }
 
 .list {
-	// list-style: none;
+	list-style: none;
 }
 
 .list__feed,
@@ -60,15 +61,60 @@
 
 .servicesWrap {
 	width: calc(100% -20px);
-	padding: 10px;
+	padding: 7px;
 	border: 1px solid #e0e2e6;
 	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
 }
 
 .mainServices {
 	width: 140px;
-	height: 140px;
+	margin: 7px;
+	padding-bottom: 15px;
+}
+
+.mainServices:hover .mainServices__serviceName {
+	color: #71973c;
+	transition: color .3s ease;
+}
+
+.mainServices:hover .mainServices__serviceImg {
+	background-color: #f4f7fb;
+	transition: background-color .3s ease;
+}
+
+.mainServices__serviceImg {
+	position: relative;
+	cursor: pointer;
+	transition: background-color .3s ease;
 	border: 1px solid #e0e2e6;
+}
+
+.mainServices__imgLink {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 140px;
+	height: 140px;
+}
+
+.mainServices__icon {
+	width: 140px;
+	height: 140px;
+	object-fit: contain;
+}
+
+.mainServices__serviceName {
+	display: inline-block;
+	text-decoration: none;
+	transition: color .3s ease;
+	color: #1c2534;
+	font: 400 14px Roboto;
+	padding: 15px 0;
 }
 
 
