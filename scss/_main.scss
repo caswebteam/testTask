@@ -15,15 +15,46 @@
 
 .list {
 	list-style: none;
+	padding-left: 0;
 }
 
 .list__feed,
 .list__ask,
 .list__companies,
 .list__service {
-	font-size: 16px;
-	padding: 10px 10px 10px 30px;
+	padding: 10px 10px 10px 50px;
 	border-bottom: 1px solid #e0e2e6;
+}
+
+.list__link {
+	text-decoration: none;
+	font-size: 16px;
+	color: #59606b;
+}
+
+.list__feed {
+	background-image: url("../images/house.png");
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+}
+
+
+.list__ask {
+	background-image: url("../images/what.png");
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+}
+
+.list__companies {
+	background-image: url("../images/111.png");
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+}
+
+.list__service {
+	background-image: url("../images/doc.png");
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
 }
 
 
